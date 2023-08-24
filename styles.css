@@ -27,11 +27,16 @@ a {
   text-decoration: none;
 }
 
+.nav-group-link:hover {
+  color: orange;
+}
+
 /* COMMON RESOLUTION STYLES  */
 
-/* .menu-toggle:hover,
+.menu-toggle:hover,
 .menu-toggle:focus {
-} */
+  color: orange;
+}
 
 /* !!!!!!!!!!!!!!  MOBILE MENU / NAVIGATION !!!!!!!!!!!!!!  */
 
@@ -157,7 +162,122 @@ a {
   flex-shrink: 0;
 }
 
-/* !!!!!!!!!!!!!!  HERO SECTION  !!!!!!!!!!!!!!  */
+/* NAVBAR TABLET DESIGN 
+*/
+
+@media only screen and (min-width: 768px) {
+  /* mobile menu open / close btn */
+  .mobile-header-container .js-open-menu svg,
+  .menu-container .menu-toggle svg {
+    width: 32px;
+    height: 32px;
+  }
+
+  /* mobile menu content container */
+  .menu-container {
+    width: 290px;
+  }
+
+  .js-menu-container .mobile-navigation {
+    padding-top: 156px;
+    padding-left: 85px;
+  }
+
+  .js-menu-container .menu-social {
+    display: flex;
+    gap: 18px;
+    position: absolute;
+    left: 32px;
+    bottom: 24px;
+  }
+
+  .js-menu-container .menu-social .social-icons {
+    width: 24px;
+    height: 24px;
+  }
+
+  /* HEADER */
+
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+
+  .header .mobile-header-container {
+    max-width: 704px;
+    display: flex;
+    gap: 503px;
+  }
+}
+
+/* NAVBAR DESKTOP DESIGN 
+*/
+
+@media screen and (min-width: 1200px) {
+  .menu-toggle {
+    display: none;
+  }
+
+  .mobile-header-container .nav-pages,
+  .social-media-icons {
+    display: flex;
+    gap: 18px;
+  }
+
+  .header .mobile-header-container {
+    gap: 0;
+    max-width: 1136px;
+  }
+
+  .header {
+    padding-top: 26px;
+    padding-bottom: 34px;
+  }
+
+  .header .mobile-header-container .logo svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header-container .nav-pages {
+    gap: 24px;
+  }
+
+  .header-container .nav-pages li .nav-group-link {
+    color: var(--almost-black);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16px; /* 114.286% */
+    letter-spacing: -0.28px;
+  }
+
+  .header .header-container .logo {
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: -0.54px;
+  }
+
+  .header-container .social-media-icons li a svg {
+    width: 24px;
+    height: 24px;
+    fill: #fafafa;
+    stroke: var(--almost-black);
+  }
+
+  #nav-hover:hover,
+  #nav-hover:focus {
+    color: var(--dark-orange);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  #svg-hover:hover,
+  #svg-hover:focus {
+    stroke: var(--dark-orange);
+    transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}
+
+/* !!!!!!!!!!!!!!  HERO SECTION MOBILE  !!!!!!!!!!!!!!  */
 
 .hero-container {
   width: 100vw;
@@ -171,7 +291,7 @@ a {
       rgba(17, 17, 17, 0) 0%,
       rgba(17, 17, 17, 0.4) 100%
     ),
-    url(./images/bg-img-m.png),
+    url(../images/bg-img-m.png),
     lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
   border-radius: 30px;
   background-repeat: no-repeat;
@@ -182,6 +302,7 @@ a {
   flex-shrink: 0;
   display: flex;
   flex-direction: column;
+  margin-bottom: 71px;
 }
 
 .hero-section h1 {
@@ -247,65 +368,48 @@ a {
   border-radius: 50%;
 }
 
-/* NAVBAR TABLET DESIGN 
-*/
+#buy-btn:hover,
+#buy-btn:active {
+  color: var(--dark-orange);
+  background-color: #fcf1e0;
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#how-btn:hover,
+#how-btn:active {
+  color: var(--dark-orange);
+  background-color: #fff;
+  border-color: var(--dark-orange);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#scroll:hover,
+#scroll:focus {
+  color: var(--dark-orange);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+#arrow:hover,
+#arrow:focus {
+  color: #fff;
+  background-color: var(--dark-orange);
+  transition: 500ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* !!!!!!!!!!!!!!  HERO SECTION  TABLET !!!!!!!!!!!!!!  */
 
 @media only screen and (min-width: 768px) {
-  /* mobile menu open / close btn */
-  .mobile-header-container .js-open-menu svg,
-  .menu-container .menu-toggle svg {
-    width: 32px;
-    height: 32px;
-  }
-
-  /* mobile menu content container */
-  .menu-container {
-    width: 290px;
-  }
-
-  .js-menu-container .mobile-navigation {
-    padding-top: 156px;
-    padding-left: 85px;
-  }
-
-  .js-menu-container .menu-social {
-    display: flex;
-    gap: 18px;
-    position: absolute;
-    left: 32px;
-    bottom: 24px;
-  }
-
-  .js-menu-container .menu-social .social-icons {
-    width: 24px;
-    height: 24px;
-  }
-
-  /* HEADER */
-
-  .header {
-    padding-top: 24px;
-    padding-bottom: 24px;
-  }
-
-  .header .mobile-header-container {
-    max-width: 704px;
-    display: flex;
-    gap: 503px;
-  }
-
-  /* !!!!!!!!!!!!!!  HERO SECTION  !!!!!!!!!!!!!!  */
-
   .hero-section {
     background: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(./images/bg-img-t.png),
+      url(../images/bg-img-t.png),
       lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
     max-width: 704px;
     height: 890px;
+    margin-bottom: 50px;
   }
 
   .hero-section h1 {
@@ -351,73 +455,24 @@ a {
     padding: 8px;
     width: 38px;
     height: 38px;
+    color: var(--dark-orange);
   }
 }
-/* NAVBAR DESKTOP DESIGN 
-*/
+
+/* !!!!!!!!!!!!!!  HERO SECTION DESKTOP !!!!!!!!!!!!!!  */
 
 @media screen and (min-width: 1200px) {
-  .menu-toggle {
-    display: none;
-  }
-
-  .mobile-header-container .nav-pages,
-  .social-media-icons {
-    display: flex;
-    gap: 18px;
-  }
-
-  .header .mobile-header-container {
-    gap: 0;
-    max-width: 1136px;
-  }
-
-  .header {
-    padding-top: 26px;
-    padding-bottom: 34px;
-  }
-
-  .header .mobile-header-container .logo svg {
-    width: 24px;
-    height: 24px;
-  }
-
-  .header-container .nav-pages {
-    gap: 24px;
-  }
-
-  .header-container .nav-pages li .nav-group-link {
-    color: var(--almost-black);
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 16px; /* 114.286% */
-    letter-spacing: -0.28px;
-  }
-
-  .header .header-container .logo {
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: -0.54px;
-  }
-
-  .header-container .social-media-icons li a svg {
-    width: 24px;
-    height: 24px;
-    fill: #fafafa;
-    stroke: var(--almost-black);
-  }
-
-  /* !!!!!!!!!!!!!!  HERO SECTION  !!!!!!!!!!!!!!  */
   .hero-section {
     background: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
         rgba(17, 17, 17, 0.4) 100%
       ),
-      url(./images/bg-img-d.png),
+      url(../images/bg-img-d.png),
       lightgray -435.077px -7.879px / 282.839% 101.752% no-repeat;
     max-width: 1136px;
     height: 600px;
+    margin-bottom: 72px;
   }
 
   .hero-section h1 {

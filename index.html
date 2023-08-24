@@ -29,29 +29,29 @@
         <!--  LOGO  -->
         <a href="index.html" class="logo">
           <span>SIMPLY </span>CHOCOLATE<svg>
-            <use href="./images/icons/symbol-defs.svg#icon-chocolate"></use>
+            <use href="images/icons/symbol-defs.svg#icon-chocolate"></use>
           </svg>
         </a>
         <!-- NAVBAR DESKTOP -->
         <ul class="nav-pages">
-          <li><a href="index.html" class="nav-group-link">Home</a></li>
+          <li><a href="#top" class="nav-group-link" id="nav-hover">Home</a></li>
           <li>
-            <a href="./partials/how-its-made.html" class="nav-group-link"
+            <a href="#howitsmade" class="nav-group-link" id="nav-hover"
               >How it’s made?</a
             >
           </li>
           <li>
-            <a href="./partials/our-products.html" class="nav-group-link"
+            <a href="#ourproducts" class="nav-group-link" id="nav-hover"
               >Our products</a
             >
           </li>
           <li>
-            <a href="./partials/top-sellers.html" class="nav-group-link"
+            <a href="#topsellers" class="nav-group-link" id="nav-hover"
               >Top sellers</a
             >
           </li>
           <li>
-            <a href="./partials/reviews.html" class="nav-group-link">
+            <a href="#chocoisloved" class="nav-group-link" id="nav-hover">
               Chocolate is loved</a
             >
           </li>
@@ -63,10 +63,8 @@
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              <svg class="social-icons">
-                <use
-                  href="./images/icons/symbol-defs.svg#icon-instagram-d"
-                ></use>
+              <svg class="social-icons" id="svg-hover">
+                <use href="images/icons/symbol-defs.svg#icon-instagram-d"></use>
               </svg>
             </a>
           </li>
@@ -76,8 +74,8 @@
               target="_blank"
               rel="nofollow noopener noreferrer"
             >
-              <svg class="social-icons">
-                <use href="./images/icons/symbol-defs.svg#icon-twitter-d"></use>
+              <svg class="social-icons" id="svg-hover">
+                <use href="images/icons/symbol-defs.svg#icon-twitter-d"></use>
               </svg>
             </a>
           </li>
@@ -89,47 +87,38 @@
           aria-controls="mobile-menu"
         >
           <svg>
-            <use href="./images/icons/symbol-defs.svg#icon-mobile-menu"></use>
+            <use href="images/icons/symbol-defs.svg#icon-mobile-menu"></use>
           </svg>
         </button>
       </div>
     </header>
-
     <!-- *** MOBILE MENU / NAVIGATION ***-->
 
     <div class="menu-container js-menu-container" id="mobile-menu">
-      <!-- MOBILE MENU CLOSE BUTTON-->
       <button class="menu-toggle js-close-menu">
         <svg>
-          <use href="./images/icons/symbol-defs.svg#icon-close"></use>
+          <use href="images/icons/symbol-defs.svg#icon-close"></use>
         </svg>
       </button>
-      <!-- NAVIGATION MOBILE -->
+
       <ul class="mobile-navigation">
         <li><a href="index.html" class="nav-group-link">Home</a></li>
         <li>
-          <a
-            href="./partials/how-its-made.html"
-            class="nav-group-link after-decoration"
+          <a href="#howitsmade" class="nav-group-link after-decoration"
             >How it’s made?</a
           >
         </li>
         <li>
-          <a href="./partials/our-products.html" class="nav-group-link"
-            >Our products</a
-          >
+          <a href="#ourproducts" class="nav-group-link">Our products</a>
         </li>
         <li>
-          <a href="./partials/top-sellers.html" class="nav-group-link"
-            >Top sellers</a
-          >
+          <a href="#topsellers" class="nav-group-link">Top sellers</a>
         </li>
         <li>
-          <a href="./partials/reviews.html" class="nav-group-link">
-            Chocolate is loved</a
-          >
+          <a href="#chocoisloved" class="nav-group-link"> Chocolate is loved</a>
         </li>
       </ul>
+
       <ul class="menu-social">
         <li>
           <a
@@ -138,7 +127,7 @@
             rel="nofollow noopener noreferrer"
           >
             <svg class="social-icons">
-              <use href="./images/icons/symbol-defs.svg#icon-instagram"></use>
+              <use href="images/icons/symbol-defs.svg#icon-instagram"></use>
             </svg>
           </a>
         </li>
@@ -149,7 +138,7 @@
             rel="nofollow noopener noreferrer"
           >
             <svg class="social-icons">
-              <use href="./images/icons/symbol-defs.svg#icon-twitter"></use>
+              <use href="images/icons/symbol-defs.svg#icon-twitter"></use>
             </svg>
           </a>
         </li>
@@ -167,16 +156,24 @@
         </h1>
         <div class="buttons-container">
           <div class="hero-buttons">
-            <button class="hero-buy-btn">Buy now</button>
+            <button
+              class="button"
+              type="button"
+              data-modal-open="#modal"
+              id="buy-btn"
+            >
+              Buy now
+            </button>
             <!-- BUY NOW MODAL TO BE INCLUDED -->
-            <a href="./partials/how-its-made.html" class="how-is-made-btn"
+            <a href="#howitsmade" class="how-is-made-btn" id="how-btn"
               >How it’s made</a
             >
           </div>
-          <a href="./partials/footer.html" class="scroll-down">
+          <a href="#bottom" class="scroll-down" id="scroll">
             scroll down
-            <svg>
-              <use href="./images/icons/symbol-defs.svg#icon-scroll-down"></use>
+
+            <svg id="arrow">
+              <use href="images/icons/symbol-defs.svg#icon-scroll-down"></use>
             </svg>
           </a>
         </div>
